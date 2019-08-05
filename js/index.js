@@ -75,3 +75,35 @@ tag2.innerText = 'Info'
 tag2.href = '#'
 main2.append(tag2)
 tag2.style.color = 'green'
+
+let mainHeader = document.querySelector('h1')
+mainHeader.textContent = siteContent['cta']['h1']
+
+let mainButton = document.querySelector('button')
+mainButton.innerText = 'Get Started'
+
+let logo3 = document.querySelector('#cta-img')
+logo3.setAttribute('src', siteContent["cta"]["img-src"])
+
+let mainContent = document.querySelectorAll('.text-content')
+
+mainContent[0].querySelector('h4').textContent = siteContent['main-content']['features-h4']
+mainContent[0].querySelector('p').textContent = siteContent['main-content']['features-content']
+mainContent[1].querySelector('h4').textContent = siteContent['main-content']['about-h4']
+mainContent[1].querySelector('p').textContent = siteContent['main-content']['about-content']
+mainContent[2].querySelector('h4').textContent = siteContent['main-content']['product-h4']
+mainContent[2].querySelector('p').textContent = siteContent['main-content']['product-content']
+mainContent[3].querySelector('h4').textContent = siteContent['main-content']['services-h4']
+mainContent[3].querySelector('p').textContent = siteContent['main-content']['services-content']
+mainContent[4].querySelector('h4').textContent = siteContent['main-content']['vision-h4']
+mainContent[4].querySelector('p').textContent = siteContent['main-content']['vision-content']
+
+let logo4 = document.querySelector('#middle-img')
+logo4.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+let contact = document.querySelector('.contact')
+
+contact.getElementsByTagName('h4')[0].textContent = siteContent["contact"]["contact-h4"]
+contact.getElementsByTagName('p')[0].textContent = siteContent["contact"]["address"]
+contact.getElementsByTagName('p')[1].textContent = siteContent["contact"]["phone"]
+contact.getElementsByTagName('p')[1].textContent = siteContent["contact"]["email"]
