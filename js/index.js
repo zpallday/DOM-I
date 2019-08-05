@@ -60,4 +60,18 @@ aTags[4].innerText = "About"
 aTags[5].setAttribute('class', '.nav-item-6')
 aTags[5].innerText = "Contact"
 
-atags.forEach(link => link.style.color = 'green')
+aTags.forEach(link => link.style.color = 'green')
+
+const tag1 = document.createElement('a')
+const main = document.querySelector('nav')
+tag1.innerText = 'Reviews'
+tag1.href = '#'
+main.prepend(tag1)
+tag1.style.color = 'green'
+
+const tag2 = document.createElement('a')
+const main2 = document.querySelector('nav')
+tag2.innerText = 'Info'
+tag2.href = '#'
+main2.append(tag2)
+tag2.style.color = 'green'
