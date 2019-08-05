@@ -41,37 +41,37 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-let aTags = document.querySelectorAll('a')
-aTags[0].setAttribute('class', '.nav-item-1')
-aTags[0].innerText = "Services"
+let nav = document.querySelectorAll('a')
+nav[0].setAttribute('class', '.nav-item-1')
+nav[0].innerText = "Services"
 
-aTags[1].setAttribute('class', '.nav-item-2')
-aTags[1].innerText = "Product"
+nav[1].setAttribute('class', '.nav-item-2')
+nav[1].innerText = "Product"
 
-aTags[2].setAttribute('class', '.nav-item-3')
-aTags[2].innerText = "Vision"
+nav[2].setAttribute('class', '.nav-item-3')
+nav[2].innerText = "Vision"
 
-aTags[3].setAttribute('class', '.nav-item-4')
-aTags[3].innerText = "Features"
+nav[3].setAttribute('class', '.nav-item-4')
+nav[3].innerText = "Features"
 
-aTags[4].setAttribute('class', '.nav-item-5')
-aTags[4].innerText = "About"
+nav[4].setAttribute('class', '.nav-item-5')
+nav[4].innerText = "About"
 
-aTags[5].setAttribute('class', '.nav-item-6')
-aTags[5].innerText = "Contact"
+nav[5].setAttribute('class', '.nav-item-6')
+nav[5].innerText = "Contact"
 
-aTags.forEach(link => link.style.color = 'green')
+nav.forEach(link => link.style.color = 'green')
 
 const tag1 = document.createElement('a')
 const main = document.querySelector('nav')
-tag1.innerText = 'Reviews'
+tag1.innerText = 'First'
 tag1.href = '#'
 main.prepend(tag1)
 tag1.style.color = 'green'
 
 const tag2 = document.createElement('a')
 const main2 = document.querySelector('nav')
-tag2.innerText = 'Info'
+tag2.innerText = 'Last'
 tag2.href = '#'
 main2.append(tag2)
 tag2.style.color = 'green'
@@ -91,12 +91,15 @@ mainContent[0].querySelector('h4').textContent = siteContent['main-content']['fe
 mainContent[0].querySelector('p').textContent = siteContent['main-content']['features-content']
 mainContent[1].querySelector('h4').textContent = siteContent['main-content']['about-h4']
 mainContent[1].querySelector('p').textContent = siteContent['main-content']['about-content']
-mainContent[2].querySelector('h4').textContent = siteContent['main-content']['product-h4']
-mainContent[2].querySelector('p').textContent = siteContent['main-content']['product-content']
-mainContent[3].querySelector('h4').textContent = siteContent['main-content']['services-h4']
-mainContent[3].querySelector('p').textContent = siteContent['main-content']['services-content']
+mainContent[2].querySelector('h4').textContent = siteContent['main-content']['services-h4']
+mainContent[2].querySelector('p').textContent = siteContent['main-content']['services-content']
+mainContent[3].querySelector('h4').textContent = siteContent['main-content']['product-h4']
+mainContent[3].querySelector('p').textContent = siteContent['main-content']['product-content']
 mainContent[4].querySelector('h4').textContent = siteContent['main-content']['vision-h4']
 mainContent[4].querySelector('p').textContent = siteContent['main-content']['vision-content']
+
+
+
 
 let logo4 = document.querySelector('#middle-img')
 logo4.setAttribute('src', siteContent["main-content"]["middle-img-src"])
@@ -106,4 +109,10 @@ let contact = document.querySelector('.contact')
 contact.getElementsByTagName('h4')[0].textContent = siteContent["contact"]["contact-h4"]
 contact.getElementsByTagName('p')[0].textContent = siteContent["contact"]["address"]
 contact.getElementsByTagName('p')[1].textContent = siteContent["contact"]["phone"]
-contact.getElementsByTagName('p')[1].textContent = siteContent["contact"]["email"]
+contact.getElementsByTagName('p')[2].textContent = siteContent["contact"]["email"]
+
+
+
+
+let footer = document.querySelector('footer')
+footer.innerText = ("Copyright Great Idea! 2018")
